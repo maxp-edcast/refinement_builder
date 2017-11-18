@@ -20,8 +20,8 @@ module RefinementBuilder
         end
       end
       const.send :module_function, method_name
-      const.send(:refine, refines) { include const }
     end
+    const.send(:refine, refines) { include const }
   end
 
   module_function :build_refinement
