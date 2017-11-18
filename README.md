@@ -66,15 +66,15 @@ The `StringPatch` has its methods accessible in the same 3 ways as `RefinementBu
 
 2. Mixin:
 
-       String.include StringPatch
-       "hello world".print_first_5_characters
-       # => hello
+        String.include StringPatch
+        "hello world".print_first_5_characters
+        # => hello
 
 3. refinement:
 
-       using StringPatch
-       "hello world.print_first_5_characters
-       # => hello
+        using StringPatch
+        "hello world.print_first_5_characters
+        # => hello
 
 ## Under the hood
 Under the hood, what happens is this:
