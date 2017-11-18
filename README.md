@@ -73,7 +73,7 @@ The `StringPatch` has its methods accessible in the same 3 ways as `RefinementBu
 3. refinement:
 
         using StringPatch
-        "hello world.print_first_5_characters
+        "hello world".print_first_5_characters
         # => hello
 
 ## Under the hood
