@@ -1,0 +1,57 @@
+PATH
+  remote: .
+  specs:
+    refinement_builder (1.0.0)
+      gemmyrb
+
+GEM
+  remote: http://www.rubygems.org/
+  specs:
+    activesupport (5.1.4)
+      concurrent-ruby (~> 1.0, >= 1.0.2)
+      i18n (~> 0.7)
+      minitest (~> 5.1)
+      tzinfo (~> 1.1)
+    awesome_print (1.8.0)
+    byebug (9.1.0)
+    coderay (1.1.2)
+    colored (1.2)
+    concurrent-ruby (1.0.5)
+    corefines (1.11.0)
+    engtagger (0.2.1)
+    gemmyrb (0.1.6)
+      activesupport
+      awesome_print
+      byebug
+      colored
+      corefines
+      engtagger
+      minitest
+      odyssey
+      pry
+      sentence_interpreter
+      thor
+    i18n (0.9.1)
+      concurrent-ruby (~> 1.0)
+    method_source (0.9.0)
+    minitest (5.10.3)
+    odyssey (0.2.0)
+      require_all
+    pry (0.11.3)
+      coderay (~> 1.1.0)
+      method_source (~> 0.9.0)
+    require_all (1.4.0)
+    sentence_interpreter (0.0.7)
+    thor (0.20.0)
+    thread_safe (0.3.6)
+    tzinfo (1.2.4)
+      thread_safe (~> 0.1)
+
+PLATFORMS
+  ruby
+
+DEPENDENCIES
+  refinement_builder!
+
+BUNDLED WITH
+   1.15.4

@@ -1,0 +1,5 @@
+#!/usr/bin/env ruby
+Dir.glob("./*.gem").each { |path| `rm #{path}` }
+puts `gem uninstall -x refinement_builder`
+puts `gem build refinement_builder.gemspec`
+Dir.glob("./*.gem").each { |path| puts `gem install -f #{path}` }
