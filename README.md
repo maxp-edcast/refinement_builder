@@ -76,14 +76,6 @@ The `StringPatch` has its methods accessible in the same 3 ways as `RefinementBu
         "hello world".print_first_5_characters
         # => hello
 
-## Under the hood
-Under the hood, what happens is this:
-
-1. A module is defined with the given name and instance method definitions
-2. Each of the instance methods is overwritten in such a way that it will delegate to the class method if called from any other scope, and execute the original function body if it's in class method scope. 
-3. The instance methods are copied to class methods via `module_function`
-3. A refinement is defined with the instance methods.
-
 ## Usage 4 - _options_
 
 `refinement_builder` only cares about three arguments (and the block):
@@ -93,6 +85,15 @@ Under the hood, what happens is this:
 
     1. `namespace: <class/module>` where the module will be created under (defaults to Object)
     2. `refines: <class>` what the refinement will patch. Also defaults to Object.
+
+## Under the hood
+Under the hood, what happens is this:
+
+1. A module is defined with the given name and instance method definitions
+2. Each of the instance methods is overwritten in such a way that it will delegate to the class method if called from any other scope, and execute the original function body if it's in class method scope. 
+3. The instance methods are copied to class methods via `module_function`
+3. A refinement is defined with the instance methods.
+
 
 ## Benefits of this approach
 
